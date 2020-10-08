@@ -1,0 +1,17 @@
+{
+  "name": "uniono",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clear": "lerna exec \"rm -rf ./node_modules\"",
+    "bootstrap": "lerna exec \"lerna bootstrap\"",
+    "build": "lerna exec \"npm run build\"",
+    "test": "npm run build && lerna exec \"npm test\""
+  },
+  "author": "Dmitry Balakov",
+  "license": "ISC",
+  "dependencies": {
+    "lerna": "^3.22.1"
+  }
+}
