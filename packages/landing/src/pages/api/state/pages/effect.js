@@ -19,7 +19,7 @@ export default () => {
 						argument: 'trigger', 
 						type: 'any', 
 						defaultValue: 'undefined', 
-						description: 'Trigger union (any changes of stores or marts in this union call transaction)'
+						description: 'Triggers union (any changes of stores or marts in this union calls transaction)'
 					},
 					{
 						argument: 'transaction', 
@@ -28,10 +28,10 @@ export default () => {
 						description: 'Mart function'
 					}
 				]}
-				description="Create new Effect."
+				description="Creates new Effect"
 			>
 				<Typography variant="body1">
-					At the time of creation, effect searches for all stores, marts in union and subscribes to their changes.
+					At the time of creation effect searches for all stores, marts in union and subscribes to their changes
 				</Typography>
 				<UI.Code value={examples.constructor} />
 			</UI.Method>

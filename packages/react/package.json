@@ -1,7 +1,7 @@
 {
   "name": "@uniono/react",
-  "version": "0.0.0",
-  "description": "> TODO: description",
+  "version": "0.1.0",
+  "description": "React implementation of @uniono/state",
   "author": "Dmitry Balakov",
   "homepage": "",
   "license": "ISC",

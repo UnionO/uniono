@@ -1,9 +1,9 @@
 {
   "name": "@uniono/core",
-  "version": "0.0.0",
-  "description": "> TODO: description",
+  "version": "0.1.0",
+  "description": "Library to manipulate eit unions",
   "author": "Dmitry Balakov",
-  "homepage": "",
+  "homepage": "https://union.dev/#!/api/core",
   "license": "ISC",
   "main": "lib/index.js",
   "directories": {

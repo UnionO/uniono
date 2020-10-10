@@ -25,7 +25,7 @@ export default () => {
 				</div>
 			</div>
 			<Alert severity="warning" className={classes.alert}>
-				Beta (not production ready) <br />
+				Beta (not ready for production) <br />
 				Version 0.1.* is intended to demonstrate the idea itself. <br />
 				Both external api and implementation can be changed greatly
 			</Alert>

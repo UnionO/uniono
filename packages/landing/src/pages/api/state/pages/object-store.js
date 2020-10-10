@@ -22,12 +22,15 @@ export default () => {
 						description: 'Store value'
 					}
 				]}
-				description="Create new ObjectStore instance."
+				description="Creates new ObjectStore instance"
 			>
 				<UI.Code value={samples.constructor} />
 			</UI.Method>
 			<Typography variant="h5">
 				Mutations
+			</Typography>
+			<Typography variant="body1">
+				All mutation methods change store values and notify subscribers
 			</Typography>
 			<UI.Method 
 				title="setValue"
@@ -39,7 +42,7 @@ export default () => {
 						description: 'New value'
 					}
 				]}
-				description="Set new value and notify subscribers"
+				description="Sets new value and notifies subscribers"
 			>
 				<UI.Code value={samples.setValue} />
 			</UI.Method>
@@ -59,13 +62,13 @@ export default () => {
 			</UI.Method>
 			<UI.Method 
 				title="setNull"
-				description="Set value to null."
+				description="Set value to null"
 			>
 				<UI.Code value={samples.setNull} />
 			</UI.Method>
 			<UI.Method 
 				title="setUndefined"
-				description="Set value to undefined."
+				description="Set value to undefined"
 			>
 				<UI.Code value={samples.setUndefined} />
 			</UI.Method>

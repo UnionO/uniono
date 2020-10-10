@@ -8,7 +8,12 @@ export default () => (
 	<Grid container direction="column">
 		<Header 
 			title="Conway's Game of Life" 
-			description="Сan a framework be considered complete if a Todo List not implemented on it?"
+			description={(
+				<>
+				A Computer is a state machine. Threats are for people who can't program state machine. <br /> 
+				<Grid container justify="flex-end">© Alan Cox</Grid>
+				</>
+			)}
 		/>
 		<GameOfLife />
 	</Grid>

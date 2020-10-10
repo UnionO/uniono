@@ -8,7 +8,7 @@ export default () => (
 	<Grid container direction="column">
 		<Header 
 			title="Watches" 
-			description="Tick tack, tick tack, tick tack"
+			description="Tick tock, tick tock, tick tock"
 		/>
 		<Watches />
 	</Grid>

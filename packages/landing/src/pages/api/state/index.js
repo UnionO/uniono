@@ -35,7 +35,7 @@ export default () => {
 				About
 			</Typography>
 			<Typography variant="body1">
-				Library implementation stores, mart, transaction and effect
+				State management implementation
 			</Typography>
 			<Typography variant="h5">
 				Stores
@@ -103,7 +103,7 @@ export default () => {
 				Mart
 			</Typography>
 			<Typography variant="body">
-				Marts allows to store pre-calculated data.
+				Marts allow to store pre-calculated data
 			</Typography>
 			<UI.Code value={examples.mart} />
 			<Grid 
@@ -120,7 +120,7 @@ export default () => {
 				Transaction
 			</Typography>
 			<Typography variant="body">
-				Transactions allow you to atomically change the state of arbitrary stores.
+				Transactions allow you to batch-change the state of arbitrary stores
 			</Typography>
 			<UI.Code value={examples.transactions} />
 			<Grid 
@@ -137,7 +137,7 @@ export default () => {
 				Effect
 			</Typography>
 			<Typography variant="body">
-				Effects allow you to react to changes in stores or marts.
+				Effects allow you to react to changes in stores or marts
 			</Typography>
 			<UI.Code value={examples.effect} />
 			<Grid 

@@ -28,10 +28,10 @@ export default () => {
 						description: 'Mart function'
 					}
 				]}
-				description="Create new Mart."
+				description="Creates new Mart"
 			>
 				<Typography variant="body1">
-					At the time of creation, mart searches for all stores, marts in union and subscribes to their changes.
+					At the time of creation mart searches for all stores and marts in union and subscribes to their changes
 				</Typography>
 				<UI.Code value={examples.constructor} />
 			</UI.Method>

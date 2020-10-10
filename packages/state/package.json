@@ -1,9 +1,9 @@
 {
   "name": "@uniono/state",
-  "version": "0.0.0",
-  "description": "> TODO: description",
+  "version": "0.1.0",
+  "description": "Transaction based state manager",
   "author": "Dmitry Balakov",
-  "homepage": "",
+  "homepage": "https://union.dev/#!/api/state",
   "license": "ISC",
   "main": "lib/hooks/useUnion/index.js",
   "directories": {

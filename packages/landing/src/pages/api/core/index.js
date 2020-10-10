@@ -12,7 +12,7 @@ export default () => {
 				@uniono/core
 			</Typography>
 			<Typography variant="body1">
-				Library contain one class Union. This class intended to manipulate with any structure or object.
+				Library contains one class - Union. This class is intended to manipulate any structure or object.
 			</Typography>
 			<Typography variant="h5">
 				Class Union
@@ -24,10 +24,10 @@ export default () => {
 						argument: 'isAtom', 
 						type: 'function', 
 						defaultValue: '', 
-						description: 'Function is a predicate, to test each part of the union.'
+						description: 'Function is a predicate to test each part of the union'
 					}
 				]}
-				description="Create new Union instance."
+				description="Creates new Union instance"
 			>
 				<UI.Code value={samples.constructor} />
 			</UI.Method>
@@ -47,7 +47,7 @@ export default () => {
 						description: ''
 					}
 				]}
-				description="Create new union, with mapped parts."
+				description="Creates new union with mapped atoms"
 			>
 				<UI.Code value={samples.map} />
 			</UI.Method>
@@ -67,7 +67,7 @@ export default () => {
 						description: ''
 					}
 				]}
-				description="For each union atom call fn."
+				description="Executes a provided function once for each union atom"
 			>
 				<UI.Code value={samples.forEach} />
 			</UI.Method>
@@ -81,7 +81,7 @@ export default () => {
 						description: 'Union'
 					}
 				]}
-				description="Returns array of all union atoms."
+				description="Returns array of all union atoms"
 			>
 				<UI.Code value={samples.flat} />
 			</UI.Method>

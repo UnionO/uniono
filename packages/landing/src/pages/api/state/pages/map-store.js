@@ -22,12 +22,15 @@ export default () => {
 						description: 'Store value'
 					}
 				]}
-				description="Create new MapStore instance."
+				description="Creates new MapStore instance"
 			>
 				<UI.Code value={samples.constructor} />
 			</UI.Method>
 			<Typography variant="h5">
 				Mutations
+			</Typography>
+			<Typography variant="body1">
+				All mutation methods change store values and notify subscribers
 			</Typography>
 			<UI.Method 
 				title="setValue"
@@ -39,13 +42,13 @@ export default () => {
 						description: 'New value'
 					}
 				]}
-				description="Set new value and notify subscribers"
+				description="Sets new value and notifies subscribers"
 			>
 				<UI.Code value={samples.setValue} />
 			</UI.Method>
 			<UI.Method 
 				title="clear"
-				description="The clear() method removes all elements from a Map object."
+				description="The clear() method removes all elements from a Map object"
 			>
 				<UI.Code value={samples.clear} />
 			</UI.Method>
@@ -56,10 +59,10 @@ export default () => {
 						argument: 'key', 
 						type: 'any', 
 						defaultValue: 'undefined', 
-						description: 'The key of the element to remove from the Map object.'
+						description: 'The key of the element to remove from the Map object'
 					}
 				]}
-				description="The delete() method removes the specified element from a Map object by key."
+				description="The delete() method removes the specified element from a Map object by key"
 			>
 				<UI.Code value={samples.delete} />
 			</UI.Method>
@@ -70,16 +73,16 @@ export default () => {
 						argument: 'key', 
 						type: 'any', 
 						defaultValue: 'undefined', 
-						description: 'The key of the element to add to the Map object.'
+						description: 'The key of the element to add to the Map object'
 					},
 					{ 
 						argument: 'value', 
 						type: 'any', 
 						defaultValue: 'undefined', 
-						description: 'The value of the element to add to the Map object.'
+						description: 'The value of the element to add to the Map object'
 					}
 				]}
-				description="The set() method adds or updates an element with a specified key and a value to a Map object."
+				description="The set() method adds (or updates) an element with a specified key and a value to a Map object"
 			>
 				<UI.Code value={samples.set} />
 			</UI.Method>

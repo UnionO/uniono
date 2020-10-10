@@ -9,7 +9,7 @@ export default () => (
 	<Grid container direction="column">
 		<Header 
 			title="Todo" 
-			description="Сan a framework be considered complete if a Todo List not implemented on it?"
+			description="Сan a framework be considered complete without a Todo List implemented?"
 		/>
 		<ToDo />
 	</Grid>

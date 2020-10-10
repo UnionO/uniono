@@ -22,28 +22,31 @@ export default () => {
 						description: 'Store value'
 					}
 				]}
-				description="Create new BooleanStore instance."
+				description="Creates new BooleanStore instance"
 			>
 				<UI.Code value={samples.constructor} />
 			</UI.Method>
 			<Typography variant="h5">
 				Mutations
 			</Typography>
+			<Typography variant="body1">
+				All mutation methods change store values and notify subscribers
+			</Typography>
 			<UI.Method 
 				title="setTrue"
-				description="Set value to true and notify subscribers"
+				description="Sets value to true and notifies subscribers"
 			>
 				<UI.Code value={samples.setTrue} />
 			</UI.Method>
 			<UI.Method 
 				title="setFalse"
-				description="Set value to false and notify subscribers"
+				description="Sets value to false and notifies subscribers"
 			>
 				<UI.Code value={samples.setFalse} />
 			</UI.Method>
 			<UI.Method 
 				title="toggle"
-				description="Toggle value"
+				description="Toggles value"
 			>
 				<UI.Code value={samples.toggle} />
 			</UI.Method>

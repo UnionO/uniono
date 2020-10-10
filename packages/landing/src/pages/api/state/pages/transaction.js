@@ -28,7 +28,7 @@ export default () => {
 						description: 'Transaction function'
 					}
 				]}
-				description="Create new Transaction."
+				description="Creates new Transaction"
 			>
 				<UI.Code value={examples.constructor} />
 			</UI.Method>
@@ -45,7 +45,7 @@ export default () => {
 						description: 'Fn arguments'
 					}
 				]}
-				description="Execute transaction."
+				description="Executes transaction"
 			>
 				<UI.Code value={examples.execute} />
 			</UI.Method>
@@ -53,36 +53,36 @@ export default () => {
 				TransactionEnvironment
 			</Typography>
 			<Typography variant="body1">
-				TransactionEnvironment inject into fn as first argument, when trasnaction called.
+				TransactionEnvironment injects into transaction function as first argument, when trasnaction called
 			</Typography>
 			<UI.Code value={examples.transactionEnvironment} />
 			<UI.Method
 				title="transaction"
-				description="Link to transaction."
+				description="Link to transaction"
 			>
 				<UI.Code value={examples.envTransaction} />
 			</UI.Method>
 			<UI.Method
 				title="value"
-				description="Function without arguments. Returns actual shadow state."
+				description="Function without arguments. Returns actual shadow state"
 			>
 				<UI.Code value={examples.envValue} />
 			</UI.Method>
 			<UI.Method
 				title="mutations"
-				description="Mapped transaction union, where all stores changed to mutations, and transactions changed to execute function."
+				description="Mapped transaction union, where all stores changed to mutations and transactions changed to execute function"
 			>
 				<UI.Code value={examples.envMutations} />
 			</UI.Method>
 			<UI.Method
 				title="apply"
-				description="Function without arguments, apply shadow stores to main"
+				description="Function without arguments, applies shadow stores to main"
 			>
 				<UI.Code value={examples.envApply} />
 			</UI.Method>
 			<UI.Method
 				title="cancel"
-				description="Function without arguments, cancel shadow stores mutations"
+				description="Function without arguments, cancels shadow stores mutations"
 			>
 				<UI.Code value={examples.envCancel} />
 			</UI.Method>

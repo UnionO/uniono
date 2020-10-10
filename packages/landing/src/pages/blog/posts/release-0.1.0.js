@@ -15,7 +15,7 @@ export default {
 				Release 0.1.0
 			</Typography>	
 			<Alert severity="warning">
-				Beta (not production ready) <br />
+			  Beta (not ready for production) <br />
 				Version 0.1.* is intended to demonstrate the idea itself. <br />
 				Both external api and implementation can be changed greatly
 			</Alert>
@@ -24,7 +24,7 @@ export default {
 	data: (
 		<>
 			<Typography variant="body1">
-				Целью этого релиза является показать идею и начать диалог по поводу внешнего интерфейса библиотеки.
+				The purpose of this release is to showcase an idea to start a discussion with the community about the library API
 			</Typography>		
 			<Typography variant="h6">
 				Changes
@@ -34,21 +34,21 @@ export default {
 				@uniono/core
 			</Typography>
 			<Typography variant="body1">
-				Библиотека содержит класс помогающий манипулировать с Union
+				Library contains Union manipulations class
 			</Typography>
 			<Typography variant="h6" style={{ display: 'flex', alignItems: 'center' }}>
 				<FiberNewIcon />
 				@uniono/state
 			</Typography>
 			<Typography variant="body1">
-				Библиотека содержит классы для хранения состояния и манипуляцию с ним. <br />
+				State management implementation
 			</Typography>
 			<Typography variant="h6" style={{ display: 'flex', alignItems: 'center' }}>
 				<FiberNewIcon />
 				@uniono/react
 			</Typography>
 			<Typography variant="body1">
-				Имлементация использования стора в React
+				The library is designed to work with @uniono/state in React
 			</Typography>
 		</>
 	)

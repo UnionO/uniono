@@ -21,7 +21,7 @@ export default () => {
 					<a href="/#!/api/state">
 						@uniono/state 
 					</a>
-					in react and contain one hook useUnion.
+					in React
 				</Typography>
 				<Typography variant="h5">
 					useUnion
@@ -33,9 +33,9 @@ export default () => {
 				<Typography variant="h6">
 					Description
 				</Typography>
-				<Typography variant="body">
-					Hook useUnion have one required argument (template: Object). Based on this template, an union will be created.
-					For each key of this template, a similar key will be created in the union with value result of function
+				<Typography variant="body1">
+					Hook useUnion has one required argument (template: Object). Based on this template a union will be created.
+					A similar key (for each key of the template) will be created in the union with value result of function
 				</Typography>
 				<UI.Code value="useUnion.atom(env, template[key])" inline />
 				<UI.Code value={examples.atom} />
@@ -43,8 +43,8 @@ export default () => {
 					Examples
 				</Typography>
 				<UI.Code value={examples.atomAll} />
-				<Typography variant="body">
-					by this template the next union will be made
+				<Typography variant="body1">
+					Template, which is used to create the next union
 				</Typography>
 				<UI.Code value={examples.atomUnion} />
 				<Typography variant="h6">
@@ -55,7 +55,7 @@ export default () => {
 					<a href="https://ru.reactjs.org/docs/context.html" target="_blank">
 						React Context
 					</a>
-					To use, the application must be wrapped in DIProvider
+					The application must be wrapped in DIProvider
 				</Typography>
 				<UI.Code value={examples.di} />
 				<Typography variant="body1">
@@ -77,7 +77,7 @@ export default () => {
 							description: 'Injection atom template'
 						}
 					]}
-					description='Allow to set new injection to DI.'
+					description='Allows to set new value in DI'
 				>
 					<UI.Code value={examples.global} />
 				</UI.Method>
@@ -91,7 +91,7 @@ export default () => {
 							description: 'Injection id'
 						}
 					]}
-					description='Allow to inject atom from DI.'
+					description='Allow to inject atom from DI'
 				>
 					<UI.Code value={examples.inject} />
 				</UI.Method>
@@ -111,7 +111,7 @@ export default () => {
 					description={(
 						<>
 							useUnion.mutate designed to create an atom based on union & dependency injection state.<br />
-							Function fn will be called at the time of creation union with one argument {'{'} union, diMap {'}'}, 
+							Function fn will be called at the time of union creation with one argument {'{'} union, diMap {'}'}, 
 							where union is actual union, and diMap is Map (key -> diValue)
 						</>
 					)}
@@ -128,7 +128,7 @@ export default () => {
 							description: 'Atom'
 						}
 					]}
-					description="Allows to set value to union without any mutations."
+					description="Allows to set value to union without any mutations"
 				>
 					<UI.Code value={examples.asIs} />
 				</UI.Method>
@@ -142,7 +142,7 @@ export default () => {
 							description: 'Union template'
 						}
 					]}
-					description="Create new union from template."
+					description="Creates new union from template"
 				>
 					<UI.Code value={examples.from} />
 				</UI.Method>
@@ -161,7 +161,7 @@ export default () => {
 					]}
 					description={(
 						<div>
-							Create new 
+							Creates new 
 							<a href="/#!/api/state/store">
 								Store 
 							</a>
@@ -184,16 +184,16 @@ export default () => {
 							argument: 'unionMap', 
 							type: 'function', 
 							defaultValue: '(x) => x', 
-							description: 'Function to map mart union (With this argument, you can control when to recalculate mart)'
+							description: 'Function to map mart union (With this argument you can control when to recalculate mart)'
 						}
 					]}
 					description={(
 						<div>
-							Create new 
+							Creates new 
 							<a href="/#!/api/state/mart">
 								Mart 
 							</a>
-							in union.
+							in union
 						</div>
 					)}
 				>
@@ -217,11 +217,11 @@ export default () => {
 					]}
 					description={(
 						<div>
-							Create new 
+							Creates new 
 							<a href="/#!/api/state/transaction">
 								Transaction 
 							</a>
-							in union.
+							in union
 						</div>
 					)}
 				>
@@ -245,11 +245,11 @@ export default () => {
 					]}
 					description={(
 						<div>
-							Create new 
+							Creates new 
 							<a href="/#!/api/state/effect">
 								Effect
 							</a>
-							in union.
+							in union
 						</div>
 					)}
 				>
@@ -267,11 +267,11 @@ export default () => {
 					]}
 					description={(
 						<div>
-							Create new 
+							Creates new 
 							<a href="/#!/api/state/array-store">
 								ArrayStore 
 							</a>
-							in union.
+							in union
 						</div>
 					)}
 				>
@@ -289,11 +289,11 @@ export default () => {
 					]}
 					description={(
 						<div>
-							Create new 
+							Creates new 
 							<a href="/#!/api/state/map-store">
 								MapStore 
 							</a>
-							in union.
+							in union
 						</div>
 					)}
 				>
@@ -311,11 +311,11 @@ export default () => {
 					]}
 					description={(
 						<div>
-							Create new 
+							Creates new 
 							<a href="/#!/api/state/boolean-store">
 								BooleanStore 
 							</a>
-							in union.
+							in union
 						</div>
 					)}
 				>
@@ -333,11 +333,11 @@ export default () => {
 					]}
 					description={(
 						<div>
-							Create new 
+							Creates new 
 							<a href="/#!/api/state/number-store">
 								NumberStore 
 							</a>
-							in union.
+							in union
 						</div>
 					)}
 				>
@@ -355,11 +355,11 @@ export default () => {
 					]}
 					description={(
 						<div>
-							Create new 
+							Creates new 
 							<a href="/#!/api/state/object-store">
 								ObjectStore 
 							</a>
-							in union.
+							in union
 						</div>
 					)}
 				>

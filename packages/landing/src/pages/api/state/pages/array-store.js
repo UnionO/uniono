@@ -22,12 +22,15 @@ export default () => {
 						description: 'Store value'
 					}
 				]}
-				description="Create new ArrayStore instance."
+				description="Creates new ArrayStore instance"
 			>
 				<UI.Code value={samples.constructor} />
 			</UI.Method>
 			<Typography variant="h5">
 				Mutations
+			</Typography>
+			<Typography variant="body1">
+				All mutation methods change store values and notify subscribers
 			</Typography>
 			<UI.Method 
 				title="setValue"
@@ -39,7 +42,7 @@ export default () => {
 						description: 'New value'
 					}
 				]}
-				description="Set new value and notify subscribers"
+				description="Sets new value and notifies subscribers"
 			>
 				<UI.Code value={samples.setValue} />
 			</UI.Method>
@@ -65,7 +68,7 @@ export default () => {
 						description: 'End index'
 					}
 				]}
-				description="The fill() method changes all elements in an array to a static value, from a start index (default 0) to an end index (default array.length). It returns the modified array."
+				description="The fill() method changes all elements in an array to a static value (from a start index 0, by default, to an end index array.length) and returns the modified array."
 			>
 				<UI.Code value={samples.fill} />
 			</UI.Method>
@@ -78,14 +81,14 @@ export default () => {
 						defaultValue: '', 
 						description: (
 							<>
-								Function is a predicate, to test each element of the array. 
-								Return a value that coerces to true to keep the element, or to false otherwise.<br />
+								Function is a predicate to test each element of the array.
+								Returns a value that forces to true to keep the element, or false otherwise.<br />
 								It accepts three arguments: element, index, array
 							</>
 						)
 					}
 				]}
-				description="The filter() method creates a new array with all elements that pass the test implemented by the provided function."
+				description="The filter() method creates new array with all elements that pass the test (provided function)"
 			>
 				<UI.Code value={samples.filter} />
 			</UI.Method>
@@ -96,10 +99,10 @@ export default () => {
 						argument: 'depth', 
 						type: 'number', 
 						defaultValue: '1', 
-						description: 'The depth level specifying how deep a nested array structure should be flattened.'
+						description: 'The depth level specifying how deep a nested array structure should be flattened'
 					}
 				]}
-				description="The flat() method creates a new array with all sub-array elements concatenated into it recursively up to the specified depth."
+				description="The flat() method creates new array with all sub-array elements concatenated into it recursively down to the specified depth. The result array becomes stores new value"
 			>
 				<UI.Code value={samples.flat} />
 			</UI.Method>
@@ -110,10 +113,10 @@ export default () => {
 						argument: 'callback', 
 						type: 'function', 
 						defaultValue: '', 
-						description: 'Function that produces an element of the new Array, taking three arguments: currentValue, index, array'
+						description: 'Function that produces an element of the new Array. It acceps three arguments: currentValue, index, array'
 					}
 				]}
-				description="The flatMap() method returns a new array formed by applying a given callback function to each element of the array, and then flattening the result by one level. It is identical to a map() followed by a flat() of depth 1, but slightly more efficient than calling those two methods separately."
+				description="The flatMap() method returns a new array formed by applying a given callback function to each element of the array, and then flattening the result by one level. Identical to a map() followed by a flat() of depth 1, but slightly more efficient than calling those two methods separately. The result array becomes stores new value"
 			>
 				<UI.Code value={samples.flatMap} />
 			</UI.Method>
@@ -124,16 +127,16 @@ export default () => {
 						argument: 'callback', 
 						type: 'function', 
 						defaultValue: '', 
-						description: 'Function that is called for every element of arr. Each time callback executes, the returned value is added to new_array. The callback function accepts the following arguments: currentValue, index, array'
+						description: 'Function that is called for every element of arr. Each time callback executes, the returned value is added to new_array. Callback function accepts following arguments: currentValue, index, array'
 					}
 				]}
-				description="The map() method creates a new array populated with the results of calling a provided function on every element in the calling array."
+				description="The map() method creates a new array and fills it with the results of applying a provided function to every element in the calling array. The result array becomes stores new value"
 			>
 				<UI.Code value={samples.map} />
 			</UI.Method>
 			<UI.Method 
 				title="pop"
-				description="The pop() method removes the last element from an array and returns that element. This method changes the length of the array."
+				description="The pop() method removes the last element from an array and returns that element. This method changes the length of the array"
 			>
 				<UI.Code value={samples.pop} />
 			</UI.Method>
@@ -144,22 +147,22 @@ export default () => {
 						argument: '...elements', 
 						type: 'any', 
 						defaultValue: '', 
-						description: 'The element(s) to add to the end of the array.'
+						description: 'The element(s) to add to the end of the array'
 					}
 				]}
-				description="The push() method adds one or more elements to the end of an array and returns the new length of the array."
+				description="The push() method adds one or more elements to the end of array and returns its new length"
 			>
 				<UI.Code value={samples.push} />
 			</UI.Method>
 			<UI.Method 
 				title="reverse"
-				description="The reverse() method reverses an array in place. The first array element becomes the last, and the last array element becomes the first."
+				description="The reverse() method reverses an array in place. The first array element becomes the last, and the last array element becomes the first"
 			>
 				<UI.Code value={samples.reverse} />
 			</UI.Method>
 			<UI.Method 
 				title="shift"
-				description="The shift() method removes the first element from an array and returns that removed element. This method changes the length of the array."
+				description="The shift() method removes the first element from an array and returns that removed element. This method changes the length of the array"
 			>
 				<UI.Code value={samples.shift} />
 			</UI.Method>
@@ -173,7 +176,7 @@ export default () => {
 						description: 'Specifies a function that defines the sort order'
 					}
 				]}
-				description="The sort() method sorts the elements of an array in place and returns the sorted array. The default sort order is ascending, built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values."
+				description="The sort() method sorts the elements of an array in place and returns the sorted array. The default sort order is ascending, built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values"
 			>
 				<UI.Code value={samples.sort} />
 			</UI.Method>
@@ -184,19 +187,19 @@ export default () => {
 						argument: 'start', 
 						type: 'number', 
 						defaultValue: '', 
-						description: 'The index at which to start changing the array.'
+						description: 'Index of the first element to change in array'
 					},
 					{ 
 						argument: 'deleteCount', 
 						type: 'number', 
 						defaultValue: 'array.length - start', 
-						description: 'An integer indicating the number of elements in the array to remove from start.'
+						description: 'An integer indicating the number of elements in the array to remove from start'
 					},
 					{ 
 						argument: '...items', 
 						type: 'any', 
 						defaultValue: '', 
-						description: 'The elements to add to the array, beginning from start. If you do not specify any elements, splice() will only remove elements from the array.'
+						description: 'The elements to add to the array, beginning from start. If you do not specify any elements, splice() will only remove elements from the array'
 					}
 				]}
 				description="The sort() method sorts the elements of an array in place and returns the sorted array. The default sort order is ascending, built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values."
@@ -210,10 +213,10 @@ export default () => {
 						argument: '...elements', 
 						type: 'any', 
 						defaultValue: '', 
-						description: 'The elements to add to the front of the array.'
+						description: 'The elements to add in the beginning of the array.'
 					}
 				]}
-				description="The unshift() method adds one or more elements to the beginning of an array and returns the new length of the array."
+				description="The unshift() method adds one or more elements to the beginning of an array and returns the new length of the array"
 			>
 				<UI.Code value={samples.unshift} />
 			</UI.Method>

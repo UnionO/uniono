@@ -28,7 +28,7 @@ export default () => {
 						description: 'Store mutations class'
 					}
 				]}
-				description="Create new Store instance."
+				description="Creates new Store instance"
 			>
 				<UI.Code value={samples.constructor} />
 			</UI.Method>
@@ -45,7 +45,7 @@ export default () => {
 						description: 'New value'
 					}
 				]}
-				description="Set new value and notify subscribers"
+				description="Sets new value and notifies subscribers"
 			>
 				<UI.Code value={samples.setValue} />
 			</UI.Method>

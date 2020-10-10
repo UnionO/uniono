@@ -73,7 +73,7 @@ export default ({ menu, onClose }) => {
 						/>
 						<MenuItem 
 							link="#!/examples/game-of-life" 
-							text="Game of Life" 
+							text="CGoL" 
 							icon={EcoIcon} 
 							classes={classes}
 							onClick={menu.hide}
