@@ -52,7 +52,11 @@ export default () => {
 				</Typography>
 				<Typography variant="body1">
 					Dependency Injection based on 
-					<a href="https://ru.reactjs.org/docs/context.html" target="_blank">
+					<a 
+						href="https://ru.reactjs.org/docs/context.html" 
+						target="_blank"
+						rel="noopener noreferrer"
+					>
 						React Context
 					</a>
 					The application must be wrapped in DIProvider
@@ -253,7 +257,7 @@ export default () => {
 						</div>
 					)}
 				>
-					<UI.Code value={examples.booleanStore} />
+					<UI.Code value={examples.effect} />
 				</UI.Method>
 				<UI.Method 
 					title="useUnion.arrayStore"
@@ -517,16 +521,25 @@ ReactDOM.render(
 	transaction: `{
 	input: '',
 	tasks: [],
-	addTask: ({ value, mutations }) => {
-		const { input } = value()
-		const title = input.trim()
-		if (title.length === 0) {
-			return
+	addTask: useUnion.transaction(
+		({ value, mutations }) => {
+			const { input } = value()
+			const title = input.trim()
+			if (title.length === 0) {
+				return
+			}
+	
+			mutations.input.setValue('')
+			mutations.tasks.unshift({ done: false, title })
 		}
-
-		mutations.input.setValue('')
-		mutations.tasks.unshift({ done: false, title })
-	}
+	)
+}`,
+effect: `{
+	q: '',
+	qEffect: useUnion.effect(
+		debounce(({ mutations }, q) => mutations.loadEntities(q), 300),
+		({ q }) => q
+	)
 }`,
 	arrayStore: `{
 	items: useUnion.arrayStore([ 2, 4, 8, 16 ]) 
