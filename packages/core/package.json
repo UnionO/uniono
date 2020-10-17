@@ -1,7 +1,7 @@
 {
   "name": "@uniono/core",
-  "version": "0.1.0",
-  "description": "Library to manipulate eit unions",
+  "version": "0.1.1",
+  "description": "Library to manipulate any unions",
   "author": "Dmitry Balakov",
   "homepage": "https://union.dev/#!/api/core",
   "license": "ISC",
@@ -12,6 +12,7 @@
     "test": "tests"
   },
   "files": [
+    "docs",
     "lib"
   ],
   "scripts": {

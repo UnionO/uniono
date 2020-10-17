@@ -1,6 +1,6 @@
 {
   "name": "@uniono/state",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Transaction based state manager",
   "author": "Dmitry Balakov",
   "homepage": "https://union.dev/#!/api/state",
@@ -8,9 +8,11 @@
   "main": "lib/hooks/useUnion/index.js",
   "directories": {
     "lib": "lib",
-    "test": "__tests__"
+    "docs": "docs",
+    "test": "tests"
   },
   "files": [
+    "docs",
     "lib"
   ],
   "scripts": {
@@ -32,7 +34,7 @@
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
     "@testing-library/react-hooks": "^3.4.1",
-    "@uniono/core": "^0.0.0",
+    "@uniono/core": "^0.1.0",
     "babel-jest": "^26.3.0",
     "babel-loader": "^8.1.0",
     "jest": "^26.4.2",

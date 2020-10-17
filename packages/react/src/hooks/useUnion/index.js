@@ -1,4 +1,3 @@
-import Effect from '@uniono/state/lib/effect'
 import Mart from '@uniono/state/lib/mart'
 import Store from '@uniono/state/lib/store'
 import ArrayStore from '@uniono/state/lib/store/array'
@@ -29,7 +28,9 @@ const useUnion = (template) => {
 	return martRef.current.value
 }
 
-const from = (env, template) => {
+const from = (env, templateArg) => {
+	const template = typeof templateArg === 'function' ? templateArg(env) : templateArg
+
 	if (typeof template !== 'object') {
 		throw new Error(`useUnionForm: unhandled atom type ${JSON.stringify(typeof template)}`)
 	}
@@ -91,20 +92,18 @@ useUnion.numberStore = (atom) => new Mutate(() => new NumberStore(atom))
 useUnion.objectStore = (atom) => new Mutate(() => new ObjectStore(atom))
 useUnion.mart = (mapFn, unionMap = (x) => x) => new Mutate((env) => new Mart(unionMap(env.union), mapFn))
 useUnion.transaction = (fn, unionMap = (x) => x) => new Mutate((env) => new Transaction(unionMap(env.union), fn))
-useUnion.effect = (fn, unionMap = (x) => x) => 
-	new Mutate((env) => new Effect(unionMap(env.union), new Transaction(env.union, fn)))
 useUnion.global = (key, atom) => new Mutate((env) => {
 	const result = useUnion.atom(env, atom)
 	env.diMap.set(key, result)
 
 	return result
 })
-useUnion.inject = (key) => new Mutate((env) => {
+useUnion.inject = (key, map = (x) => x) => new Mutate((env) => {
 	if (!env.diMap.has(key)) {
 		throw new Error(`useUnion: global key ${JSON.stringify(key)} not found`)
 	}
 	
-	return env.diMap.get(key)
+	return map(env.diMap.get(key))
 })
 
 export const DIProvider = UseUnionContext
