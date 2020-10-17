@@ -1,6 +1,6 @@
 {
   "name": "@uniono/state",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Transaction based state manager",
   "author": "Dmitry Balakov",
   "homepage": "https://union.dev/#!/api/state",
